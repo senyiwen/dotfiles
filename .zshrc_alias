@@ -1,0 +1,67 @@
+# new aliases
+
+
+#open Sublime
+alias st='open -a /Applications/Sublime\ Text.app'
+alias pide='open -na "PhpStorm.app" --args'
+alias wide='open -na "WebStorm.app" --args'
+#docker
+alias dps='docker ps --format "table {{.ID}}\t{{.Image}}\t{{.Ports}}\t{{.Status}}\t{{.Names}}"'
+alias dis='docker images'
+alias dsp='docker system prune'
+
+# -------------------------------- #
+# Node Package Manager
+# -------------------------------- #
+alias s="nr start"
+alias d="nr dev"
+alias b="nr build"
+alias t="nr test"
+alias dev='nr dev'
+alias build='nr build'
+alias lint="nr lint"
+alias lintf="nr lint --fix"
+alias release="nr release"
+alias re="nr release"
+# -------------------------------- #
+# Git
+# -------------------------------- #
+
+# 基础操作
+alias gs='git status'
+alias gp='git push'
+alias gpf='git push --force'
+alias gpft='git push --follow-tags'
+alias gpl='git pull --rebase'
+alias gfp='git fetch --all --prune'
+alias gcl='git clone'
+alias gst='git stash'
+alias grm='git rm'
+alias gmv='git mv'
+
+# 分支操作
+alias gb='git branch -vv'
+alias gba='git branch -a'
+alias gbd='git branch -d'
+alias gbD='git branch -D'
+alias main='git checkout main'
+
+# 日志
+alias gl='git log'
+alias glo='git log --oneline --graph'
+alias glp='git log -p'
+alias gls='git log --stat'
+alias gll='git log --oneline --decorate --graph --all'
+
+# 添加操作
+alias ga='git add'
+alias gA='git add -A'
+
+# 提交操作
+alias gc='git commit -m'
+alias gca='git commit --amend'
+alias gcm='git checkout main && git pull --rebase && git checkout -'
+
+# 清理重置
+alias gxn='git clean -dn'
+alias gx='git clean -df'
