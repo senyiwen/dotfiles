@@ -51,14 +51,14 @@ alias l='ls -alh'
 alias ll='ls -lh'
 alias c='clear'
 
+# docker php 命令
+alias php="docker run --rm -i local_php74 php <"
+
+
 # ========= 自定义配置文件加载 =========
 [ -f ~/.zshrc_alias ] && source ~/.zshrc_alias
 
-
 export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
-
-# docker php 命令
-alias php="docker run --rm -i local_php74 php <"
 
 # for f in $ZSH_CUSTOM/alias/*.sh; do
 #   source "$f"
