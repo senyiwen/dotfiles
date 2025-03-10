@@ -1,0 +1,10 @@
+@nestjs/cli
+corepack
+depcheck
+npm-check-updates
+nrm
+pnpm
+projj
+rimraf
+conventional-changelog-cli
+@antfu/ni
