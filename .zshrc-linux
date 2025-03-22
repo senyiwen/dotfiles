@@ -1,0 +1,41 @@
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
+
+# ========= 插件 / 主题 =========
+
+
+# git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
+# ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+ZSH_THEME="agnoster"
+
+# git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+
+
+
+# https://ohmyz.sh/
+source $ZSH/oh-my-zsh.sh
+
+
+# ========= NVM 设置 =========
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+
+# ========= 快捷 alias =========
+
+
+## 常用 ls
+alias lsa='ls -a'
+alias l='ls -alh'
+alias ll='ls -lh'
+alias c='clear'
+
+#docker
+alias dps='docker ps --format "table {{.ID}}\t{{.Image}}\t{{.Ports}}\t{{.Status}}\t{{.Names}}"'
+alias dis='docker images'
+alias dsp='docker system prune'
+
